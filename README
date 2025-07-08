@@ -1,4 +1,6 @@
-
+====================================
+This is a patch to openssl1_1_1, part of a research to allow exfil via GREASE, client random and client session id.
+====================================
  OpenSSL 1.1.1x-dev
 
  Copyright (c) 1998-2023 The OpenSSL Project
