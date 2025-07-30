@@ -1,8 +1,9 @@
-This is a personal research project, not to be used in any capacity in prod.
+This is a personal research project, not to be used in any capacity.
 ==============================
 
-The OpenSSL_1_1_1-stable-research-exfil branch was developed to exfil data via GREASE (RFC 8701), client random and client session_id.
-
+The OpenSSL_1_1_1-stable-research-exfil branch was developed to exfil data via GREASE (RFC 8701), client random and client session_id.<br>
+This was developed for research purposes only.<br>
+I do not condone its usage in any environments where you do not have explicit permission to operate.
 
 
 Welcome to the OpenSSL Project
