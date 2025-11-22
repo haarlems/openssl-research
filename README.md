@@ -50,7 +50,7 @@ $ ./config --prefix=/opt/openssl-3.5 --openssldir=/opt/openssl-3.5
 5. The client will receive the command, execute and send back the output to the server stdout and to a file <br>
 6. If no commands are sent by the server, the client will check in every 3s. <br>
  <br>
-Blogpost: to come<br>
+Blogpost: [here](https://medium.com/@haarlems/tls-protocol-manipulation-a-very-low-throughput-c2-channel-24ac04bc6472) <br>
 <br>
 This was presented at DefCamp 2025.<br>
 Slides: to come<br>
