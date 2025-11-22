@@ -2884,3 +2884,7 @@ int SSL_set_quic_tls_early_data_enabled(SSL *s, int enabled);
 }
 # endif
 #endif
+
+/*begin research poc*/
+int SSL_set_server_random(SSL *ssl, const unsigned char *rand, size_t len);
+/*end research poc*/

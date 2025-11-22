@@ -1316,6 +1316,9 @@ struct ssl_connection_st {
         long flags;
         unsigned char server_random[SSL3_RANDOM_SIZE];
         unsigned char client_random[SSL3_RANDOM_SIZE];
+        /*begin research poc*/
+        int server_random_set; // override marker, 1 = set by app
+        /*end research poc*/
 
         /* used during startup, digest all incoming/outgoing packets */
         BIO *handshake_buffer;

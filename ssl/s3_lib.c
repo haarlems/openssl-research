@@ -4779,6 +4779,12 @@ int ssl_fill_hello_random(SSL_CONNECTION *s, int server,
 
     if (len < 4)
         return 0;
+    /*begin research poc*/
+    if (server && s->s3.server_random_set) {
+         memcpy(result, s->s3.server_random, len);
+         return 1;
+    }
+    /*end research poc*/
     if (server)
         send_time = (s->mode & SSL_MODE_SEND_SERVERHELLO_TIME) != 0;
     else

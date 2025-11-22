@@ -8365,3 +8365,17 @@ int SSL_CTX_get0_server_cert_type(const SSL_CTX *ctx, unsigned char **t, size_t 
     *len = ctx->server_cert_type_len;
     return 1;
 }
+
+/*begin research poc*/
+int SSL_set_server_random(SSL *ssl, const unsigned char *rand, size_t len)
+{
+    SSL_CONNECTION *s;
+    if (ssl == NULL || rand == NULL || len != SSL3_RANDOM_SIZE)
+        return 0;
+    s = SSL_CONNECTION_FROM_SSL(ssl);
+    
+    memcpy(s->s3.server_random, rand, SSL3_RANDOM_SIZE);
+    s->s3.server_random_set = 1;
+    return 1;
+}
+/*end research poc*/
